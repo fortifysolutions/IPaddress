@@ -16,7 +16,7 @@ print(green,'\"This Tool is to fetch the IP address\"')
 
 while True:
     print(f'{blue}Enter website name \n{red}e.g: google/yahoo/bing')
-    a = input('> ')
+    a = input('> ').strip()
 
     b = 'www.'
     ccom = '.com'
