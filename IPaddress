@@ -4,6 +4,14 @@ import sys
 import socket
 
 
+def clr():
+    if os.name=='nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
+clr()
+
 print('\033[31m∙∙·▫▫ᵒᴼᵒ FETCH IP ADDRESS ᵒᴼᵒ▫▫·∙∙\033[0m')
 start = time.time()
 print('\n\033[1;31mFORTIFY\033[0m SOLUTIONS\n\033[0;32mVersion:1.01\trelease date:07-12-2019\033[0m')
@@ -48,5 +56,6 @@ while True:
     home = input(f"{green}Enter{red} [1] {green}to EXIT or any key to continue...")
     if home == '1':
         time.sleep(2)
+        clr()
         print('\n\033[0mFORTIFY SOLUTIONS thanks and appreciate all members contribution and support')
         break
